@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbg"
+    android:scaleType="fitStart"
+    tools:context=".listActivity">
+
+
+    <EditText
+        android:id="@+id/list_et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:hint="Search Platform"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/list_et_search"
+        android:scrollbars="horizontal"
+        android:longClickable="true"
+        /><!--设置一个RecyclerView-->
+
+</RelativeLayout>
+
